@@ -6,7 +6,6 @@ CC=gcc
 OPT=-O3 -fomit-frame-pointer
 CFLAGS=$(OPT) -Wall
 
-ROOT=/
 PREFIX=/usr
 
 all: lszorro
@@ -25,8 +24,6 @@ install: all
 	install -o root -g root -m 755 -s lszorro $(PREFIX)/bin
 	install -o root -g root -m 644 zorro.ids $(PREFIX)/share/misc
 	install -o root -g root -m 644 lszorro.8 $(PREFIX)/man/man8
-	# Remove relics from old versions
-	rm -f $(ROOT)/etc/zorro.ids
 
 dist: clean
 	sh -c 'X=`pwd` ; X=`basename $$X` ; cd .. ; tar czvvf /tmp/$$X.tar.gz $$X --exclude CVS --exclude tmp'
