@@ -10,7 +10,7 @@
 
 #include <linux/types.h>
 
-#define ZORROUTILS_VERSION "0.04"
+#define ZORROUTILS_VERSION "0.05"
 
 #define PROC_BUS_ZORRO "/proc/bus/zorro"
 #define ZORRO_ID_DB "/usr/share/misc/zorro.ids"
