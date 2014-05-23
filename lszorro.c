@@ -376,7 +376,7 @@ main(int argc, char **argv)
 	break;
       default:
       bad:
-	fprintf(stderr, help_msg);
+	fprintf(stderr, "%s", help_msg);
 	return 1;
       }
   if (optind < argc)
