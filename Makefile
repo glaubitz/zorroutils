@@ -4,7 +4,7 @@
 
 CC=gcc
 OPT=-O3 -fomit-frame-pointer
-CFLAGS=$(OPT) -Wall
+CFLAGS+=$(OPT) -Wall
 
 PREFIX=/usr
 
