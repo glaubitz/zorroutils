@@ -22,7 +22,7 @@ clean:
 	rm -f lszorro
 
 install: all
-	install -o root -g root -m 755 -s lszorro $(ROOT)/sbin
+	install -o root -g root -m 755 -s lszorro $(PREFIX)/bin
 	install -o root -g root -m 644 zorro.ids $(PREFIX)/share
 	install -o root -g root -m 644 lszorro.8 $(PREFIX)/man/man8
 	# Remove relics from old versions
