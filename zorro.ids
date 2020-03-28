@@ -32,7 +32,7 @@
         6000  Romulator Card
         6100  A 3000 Test fixture
         6700  A 2386SX BridgeBoard
-        6a00  CD32 SCSI Controller
+        6a00  CD32 FMV Module
         7000  A 2065 Ethernet
 0203  Commodore (West Chester)
         0300  A 2090/2090a SCSI
@@ -72,6 +72,8 @@
         0000  RAM Board
         0100  RAM Board
 03ff  ASDG
+        0100  Memory Board (2MB)
+        0200  Memory Board (8MB)
         fe00  LanRover
         ff00  IEEE-488 or Twin X Dual Serial
 0404  Imtronics/Memphis
@@ -104,7 +106,10 @@
 0539  T.Stenzel (DaFR34K)
         0100  PyRamIDE Ram and IDE Expansion
 0628  Boris Krizma
-        0900  Furia 32-Bit
+        0400  Furia S628 (4MB Fast RAM)
+        0800  Furia S628 (8MB Fast RAM)
+        0900  Furia EC020
+        1300  Furia EC020
 06e1  Great Valley Products
         0200  HD-Controller
         0300  Impact HD
@@ -118,6 +123,7 @@
         0100  UAE - ZII Ram Expansion
         0200  UAE - Magic Device Emulation
         0300  UAE - Z3 Ram Expansion
+        0400  UAE - Boot ROM I/O access
         5100  UAE - ZII Ram Expansion
         5200  UAE - Magic Device Emulation
         5300  UAE - Z3 Ram Expansion
@@ -127,10 +133,15 @@
         0100  UAE - ZII Ram Expansion
         0200  Resource Management - QuickNet 2000
         0300  UAE - Z3 Ram Expansion
+        2000  ATL HDI 1000 Ultrasound video capture card
         5100  UAE - ZII Ram Expansion
         5200  UAE - Magic Device Emulation
         5300  UAE - Z3 Ram Expansion
         6000  UAE - RTG Graphics Expansion
+        e000  Vector - Connection Serial (BETA)
+        e100  Vector - Connection Serial (BETA)
+        e200  Vector - Connection Serial (BETA)
+        e300  Vector - Connection Serial (BETA)
 07dc  DKB
         0100  BattDisk RAMDisk Board
         0900  SecureKey
@@ -167,6 +178,7 @@
         6900  Progressive 2000/040 Accelerator + 32-bit RAM
         7800  ProRAM-3000
         9600  Zeus Accelerator or Memory
+        bb00  040 Turbo (A500)
         fc00  isa io space on the AteoBus
         fd00  isa memory space on the AteoBus
         fe00  fast io space on the AteoBus / Pixel64 io
@@ -199,6 +211,7 @@
         0c00  CLtd A1000 SCSI
 0804  Jochheim Computer Tuning
         0100  2/8MB Board
+        2000  Access 32 memory expansion
 0807  Checkpoint Technologies
         0000  Dual Serial Board
 0810  Edotronik
@@ -220,6 +233,7 @@
         0300  Advantage IDE
         0400  AD 2080 RAM
         2300  Trifecta HD Controller
+        ff00  AT (IDE)
 0819  Kupke
         0100  OMTI HD Controller
         0200  Golem SCSI II
@@ -265,6 +279,9 @@
 0836  Advanced Systems & Software
         0100  Nexus SCSI
         0800  Nexus RAM
+0838  Impulse
+        0000  Firecracker 24 (NTSC)
+        0100  Firecracker 24 (PAL)
 0840  IVS (Pacific Peripherals)
         0200  GrandSlam Memory
         0400  GrandSlam Memory
@@ -299,6 +316,7 @@
 0850  NoName
         0100  Triceratops Multi I/O
 0851  Digital Micronics Inc.
+        0100  ResolverGraphics (TI34010 based)
         0200  Vivid-24 Graphics
         0600  Digital Broadcaster 32
         0900  Digital Broadcaster ELITE
@@ -322,6 +340,8 @@
         0300  MasterCard RAM
         0400  MasterCard
         0700  MVD 819
+086f  Mainhattan Data
+        0100  A-Team (IDE)
 0871  Blue Ribbon Soundworks
         0200  One Stop Music Shop
 0872  XPert
@@ -336,6 +356,7 @@
         0c00  Picasso II
         0d00  Picasso II
         1000  GBAPII++ Memory
+        1100  GBAPII++
         1500  Picasso IV Memory
         1600  Picasso IV Memory
         1700  Picasso IV I/O
@@ -343,6 +364,14 @@
         c900  Ariadne Ethernet Card
         ca00  Ariadne II Ethernet Card
         f000  Picasso II+ Memory
+        f100  Picasso II+
+        f200  PicassoIV ECS Flickerfixer
+        f300  PicassoIV AGA Flickerfixer
+        f400  Pablo II video module
+        f500  Picasso IV Video Capture
+        f600  Paloma TV tuner (PAL)
+        f700  Paloma TV tuner (NTSC)
+        f800  Concierto sound card
 087b  Utilities Unlimited
         1500  Emplant Deluxe
         2000  Emplant Board
@@ -353,9 +382,11 @@
         0000  oMniBus
 088d  ZEUS Electronic
         0100  ConneXion Ethernet Card
+        0200  ConneXion Ethernet Card in A2065 emulation mode
 088f  NewTek
         0000  VideoToaster
 0890  M-TEC Hardware Design
+        0100  HD-Controller AT500 ext.
         0300  68030 Turbo
         0500  A1204 RAM-Erweiterung / FPU
         0600  68020i Turbo
@@ -374,6 +405,7 @@
         0700  PeggyPLUS
         0a00  PiccoloSD-64 Memory
         0b00  PiccoloSD-64
+        2000  Rainbow II Gfx Card (by Hertz Elektronik)
         2100  Rainbow III RTG
 089a  Silicon Studio Ltd
         0000  20bit analogue 4 channel Board
@@ -396,7 +428,7 @@
         0d00  Allegro CDFS
         0e00  1200 E/BOX
         0f00  ScanDoubler /w FlickerFixer option
-        1000  FastATA 1200 Lite (16-bit version) EIDE controller
+        1000  FastATA 1200 Lite EIDE controller
         1100  Buffered Interface 4 x EIDE'99
         1200  FastATA 1200 EIDE controller
         1300  FastATA 1200 MKII GOLD EIDE controller
@@ -410,8 +442,9 @@
         1e00  FastATA ZORRO IV EIDE controller
         1f00  MEDIATOR ZORRO IV PCI busboard
         2000  MEDIATOR 1200 PCI busboard
+        2100  MEDIATOR PCI 4000 (PCI/Z III bridge)
         2200  ELBOX 4000 Zorro III/PCI busboard
-        2300  MIRAGE 4000 with Mirage Zorro III/PCI busboard
+        2300  MIRAGE 4000 + Mirage Z III/PCI busboard
         2400  ELBOX 3000 Zorro III/PCI busboard
         2500  ELBOX A3/4000T PCI busboard
         2600  SPIDER USB 2.0 Hi-Speed card
@@ -439,10 +472,12 @@
         3c00  MEDIATOR 1200 TX PCI busboard
         3d00  reserved
         3e00  FastATA 4000 MK-V EIDE controller
+        3f00  MEDIATOR PCI 4000 MK-II (PCI/Z III bridge)
         4000  FastATA 1200 MK-IV EIDE controller
         4100  FastATA 1200 MK-IV CF/SATA controller
         4200  FastATA 1200 ZIV CF/SATA controller
         4300  FastATA 4000 MK-VI CF/SATA controller
+        4400  MEDIATOR 3000Di Zorro III/PCI busboard
         9f00  opt. space for MEDIATOR PCI ZIV memory
         a000  opt. space for MEDIATOR PCI 1200 memory
         a100  opt. space for MEDIATOR PCI 4000 memory
@@ -460,17 +495,29 @@
         0200  4MB 32bit SRAM for 68030TK by Matze
         0300  68030TK by Matze
         0400  IDE controller for 68030TK by Matze
+        0500  Nova-Thylacine Rev.1 by crasbe & ACT Australia
+        0600  Nova-Thylacine Rev.2 by crasbe & ACT Australia
+        2a00  BoardsLAB by bubbob42
+        7b00  LAN card by buggs/Scrat/Matze
+        7c00  Matzes Clockport
+        7d00  IDE Controller by Matze
 0a50  Micronik
         0a00  RCA 120 Memory
 0c0c  Team 4
         0c00  Kasmin Graphics
 0e3b  E3B
+        1000  DENEB USB Controller (Zorro III Mode)
+        1200  DENEB USB Controlle (Zorro II Mode)
         1300  DENEB FlashROM Card
-        2000  ZorRAM/256MB Zorro III memory Expansion
+        1400  DENEB FlashROM Card (Rescue Mode)
+        1700  DENEB Clockport Rotzloeffel Edition
+        2000  ZorRAM/BigRam+/256MB Zorro III memory Expansion
+        3000  PRISMA Megamix music card
         c800  Prometheus Firestorm
         f100  ALGOR / ALGOR PRO Zorro II USB Card
         f200  HIGHWAY Zorro II USB Card
         f300  DENEB Clockport
+        f400  ICY I2C controller
 0f0f  Micronik
         0100  Infinitiv Z3 Board
 1000  MegaMicro
@@ -498,6 +545,7 @@
         4000  Kronos II/Next Generation SCSI
         5700  Hurricane 2800 Turbo
 1033  NEC Corporation
+        3500  USB 2.0 Host Controller (OHCI compliant)
         e000  USB 2.0 Host Controller
 1035  PROTAR
         3300  HD-Controller
@@ -517,6 +565,8 @@
         2980  Realtek 8029 A/B/C/D
         3981  Realtek 8139 A/B/C/D
 1102  Creative Labs
+        0200  EMU10K1 (Sound Blaster Live!)
+        0400  EMU10K2 (SB Audigy)
         3889  Ectiva EV1938
 1111  Unregistered Developer
         1100  probably A508/A608 memory expansion
@@ -525,31 +575,46 @@
         0500  ISDN Surfer
         0700  VarIO
         0a00  Kickflash OS4
+        1500  ACA 1221
+        1600  ACA 1221EC
         1700  X-Surf
+        1a00  BigRam 2630
+        2100  ACA 1233n
+        2200  ACA 1233n (68030 deactivated)
+        2300  ACA 1233n (68030 deactivated) Rev.1
         2a00  Buddha IDE / Catweasel
+        4000  ACA 500
+        4100  ACA 500+
         4200  Catweasel MK3
+        4400  ACA 1233n Rev.1
         4500  ACA 630
         4600  ACA 620
-        6400  X-Surf 100 Z-II/ZIII Ethernet
+        6400  X-Surf 100 Z-II/Z-III Ethernet
         8500  BigRamPlus internal alpha-version
         e100  ACA 1230-56Mhz
         e200  ACA 1230-41Mhz
         e300  ACA 1231-41.66Mhz
+        e400  ACA 1231-41.66Mhz (with safeboot-logic)
         e500  ACA 1231LC
         e600  ACA 630-25Mhz
         e700  ACA 1232
         e800  ACA 1220
-        e900  ACA 500 Rev.4
         ea00  ACA 630-30Mhz
         eb00  ACA 1230-28Mhz
         ef00  ACA 500 Rev.3 RC1
         f000  ACA 500 Rev.2 prototype
+        f100  ACA 620 R1:visit icomp.de/ticket.htm for update!
         f200  ACA 620 Rev.2
         f300  Buddha IDE Controller - Rev. 1997
+        f400  Buddha Flash IDE Controller (Xicor EEPROM)
+        f500  Buddha Flash IDE Controller (Samsung EEPROM)
+        f600  Buddha Flash IDE Controller (AMD 12V Flash)
         f700  Catweasel Z-II S-Class
         f800  X-Surf 100 B1:contact icomp.de for logic update
         f900  X-Surf 100 B2:contact icomp.de for logic update
-        fa00  X-Surf 100 Rev.3 Z-II/ZIII Ethernet
+        fa00  X-Surf 100 Rev.3 Z-II/Z-III Ethernet
+        fb00  X-Surf 100 Rev.3 Z-II/Z-III Ethernet
+        fc00  X-Surf 100 Rev.3 Z-II/Z-III Ethernet
         fe00  Unknown ACA Turboboard - please report
 121a  3Dfx Interactive, Inc.
         0300  Voodoo Banshee
@@ -578,6 +643,8 @@
         0100  ISDN-Blaster Z2
         0200  HyperCOM 4
         0300  HyperCOM 3z
+        0600  HyperCOM 4+
+        0700  HyperCOM 3+
         0f00  ICY I2C
 1392  Ambience Creation Technology
         0100  Thylacine USB Controller
@@ -593,13 +660,28 @@
         2800  GBA1000-60 SDRAM-1
         2900  GBA1000-60 SDRAM-2
         2a00  GBA Mini-Thylacine USB Controller
-1396  Jakub Bednarski
-        0a00  Minimig Sound Card - Z2
-        1000  Minimig USB/Ethernet Card - Z3
-        1400  Minimig RTG Card - Z2
+1397  KryoFlux, Ltd.
+        0600  Zeus68k AT-Bus IDE Controller
+        0800  Zeus68k Accelerator
+139c  Rok Krajnc
+        0000  Minimig Z2 FastRAM
+        1000  Minimig Z3 FastRAM
+        2000  Minimig Z3 EthernetCard
+        3000  Minimig Z3 GraphicsCard
+        4000  Minimig Z3 SoundCard
+13a6  Tim Tashpulatov
+        1700  Z3SDRam RAM Expansion
+        1800  dm9k Network Card
+13b0  7-bit
+        1100  Wicher 500i
+13c4  FPGAArcade
+        0a00  Replay Sound Card - Z2
+        1000  Replay USB/Ethernet Card - Z3
+        1400  Replay RTG Card - Z2
 140c  UAS Interface Ltd.
         0100  Miracle multi I/O
         0200  Magic graphics
+        8200  Magic graphics (Prototype)
 157c  Inhouse Information
         6400  ISDN ENGINE I
 1688  Bio Con
@@ -607,6 +689,7 @@
 1804  HK-Computer (ELSAT)
         0000  Vector RAM Board
 2017  Vortex
+        0300  Athlet AT-Bus (IDE)
         0700  Golden Gate 80386
         0800  Golden Gate RAM
         0900  Golden Gate 80486
@@ -644,6 +727,7 @@
         2200  AT-Board
         2300  Apollo Accelerator
 2528  Tower Technologies
+        0000  ZetaCom Z2 Multi I/O (Developer)
         0100  ZetaCom Z2 Multi I/O
 29b4  Electronic Design
         0100  FrameMachine
@@ -678,14 +762,28 @@
         1200  VLab Motion Digitizer
         1300  Altais Card
         1700  DraCoMotion Videoboard
+        1800  MachineControl (multi i/o DraCo)
         fd00  Falcon040 Turbo
+4d54  Markt & Technik
+        2a00  RAM/ROM Card (AMIGA-Hardware-Tuning)
 5333  S3 Graphics Ltd.
         0089  86C775 Trio64V2/DX
         0189  86C617 Trio 64V2 DX/GX
         018a  S3 ViRGE DX 86C375
+        0589  86C765 Trio64V+
+        0689  86C765 Trio64V+
         0789  86C765 Trio64V+ compatible
+        0989  7699688 86C765 Trio64V+
+        0a89  7699688 86C765 Trio64V+
+        0b89  7699688 86C765 Trio64V+
+        0c89  7699688 86C765 Trio64V+
+        0d89  7699688 86C765 Trio64V+
+        0e89  7699688 86C765 Trio64V+
+        0f89  7699688 86C765 Trio64V+
         1088  86C732 Trio 32
+        1188  86C764/765 Trio 64/64V+
         1388  86C764 Trio 32/64
+        1488  86C767 Trio 64UV+
         3156  S3 ViRGE 86C325
 5757  Markt & Technik
         8900  Videotext-Decoder
@@ -693,6 +791,9 @@
         1200  RAM Expansion
 6766  Combitec
         8200  RAM Expansion
+6d6e  MNT Media and Technology
+        0100  VA2000 RTG Card (Zorro III)
+        0200  VA2000 RTG Card (Zorro II)
 8000  M.A.S.T.
         0800  Fireball SCSI
         8000  SCSI + Dual Serial Controller
@@ -715,3 +816,4 @@ b5a8  Phoenix
         be00  RAM Expansion
 c008  Combitec
         2a00  OMTI HD Controller
+        2b00  S-RAM Card (check batteries!)
