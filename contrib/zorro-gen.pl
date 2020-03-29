@@ -1,5 +1,8 @@
 #!/usr/bin/perl -w
-#JMD(11.10.2013): merge boards.txt into zorro.ids
+# 
+# JMD(11.10.2013): merge boards.txt into zorro.ids
+#
+# To create boards.txt, run showboards allknown nopause > boards.txt
 use strict;
 use Data::Dumper;
 use Getopt::Std;
@@ -25,7 +28,7 @@ while(<BOARDS>) {
 	$name{$manufacturer} = $manufacturer_name;
 	print "found: manufacturer=$manufacturer manufacturer_name=$manufacturer_name\n" if($O{'d'});
     }
-    if(/^\s+\d+: (.*\w)\s+ID: (\d+)/) {
+    if(/^\s+\d+: (.*\S)\s+ID: (\d+)/) {
 	$product_name = $1;
 	$product = sprintf("%04x",$2);
 	$product =~ s/(..)(..)/$2$1/;
