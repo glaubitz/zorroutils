@@ -591,6 +591,7 @@
         4600  ACA 620
         6400  X-Surf 100 Z-II/Z-III Ethernet
         8500  BigRamPlus internal alpha-version
+        8600  BigRamPlus 256
         e100  ACA 1230-56Mhz
         e200  ACA 1230-41Mhz
         e300  ACA 1231-41.66Mhz
@@ -794,6 +795,8 @@
 6d6e  MNT Media and Technology
         0100  VA2000 RTG Card (Zorro III)
         0200  VA2000 RTG Card (Zorro II)
+        0300  ZZ9000 (Zorro II)
+        0400  ZZ9000 (Zorro III)
 8000  M.A.S.T.
         0800  Fireball SCSI
         8000  SCSI + Dual Serial Controller
